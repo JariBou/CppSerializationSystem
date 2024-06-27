@@ -1,7 +1,7 @@
 #pragma once
 
 #include <filesystem>
-#include "FileStreamWriter.h"
+#include "BinaryStreamWriter.h"
 
 namespace Serialization
 {
