@@ -10,10 +10,9 @@ namespace Serialization {
 		size_t size = 0;
 
 		ReadData((char*)&size, sizeof(size_t));
-		std::cout << size << std::endl;
-		ReadData((char*)&target, sizeof(char) * size); // raises a memory access violation | wait what? its not this?
-		// Ok so ReadData correctly reads the full string
-		// But it doesn't come back up here
+		target.resize(size);
+		ReadData((char*)target.data(), sizeof(char) * size); 
+
 		return true;
 	}
 }
