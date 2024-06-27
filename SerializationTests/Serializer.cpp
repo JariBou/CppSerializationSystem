@@ -5,7 +5,7 @@
 namespace Serialization 
 {
 
-	Serializer::Serializer(const std::filesystem::path& path) : FileStreamWriter(path)
+	Serializer::Serializer(const std::filesystem::path& path) : BinaryStreamWriter(path)
 	{
 	}
 

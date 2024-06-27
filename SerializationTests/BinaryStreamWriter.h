@@ -6,12 +6,12 @@
 namespace Serialization 
 {
 
-	class FileStreamWriter
+	class BinaryStreamWriter
 	{
 
 	public:
-		FileStreamWriter(const std::filesystem::path& path);
-		virtual ~FileStreamWriter();
+		BinaryStreamWriter(const std::filesystem::path& path);
+		virtual ~BinaryStreamWriter();
 		void Close();
 
 		bool IsStreamGood() const;

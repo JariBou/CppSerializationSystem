@@ -2,7 +2,7 @@
 #include <iostream>
 
 namespace Serialization {
-	Deserializer::Deserializer(const std::filesystem::path& path) : FileStreamReader(path)
+	Deserializer::Deserializer(const std::filesystem::path& path) : BinaryStreamReader(path)
 	{
 	}
 	bool Deserializer::ReadString(std::string& target)

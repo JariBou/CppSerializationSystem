@@ -6,7 +6,7 @@
 namespace Serialization
 {
 
-	class Serializer : public FileStreamWriter
+	class Serializer : public BinaryStreamWriter
 	{
 
 		public:

@@ -6,12 +6,12 @@
 namespace Serialization
 {
 
-	class FileStreamReader
+	class BinaryStreamReader
 	{
 
 		public:
-			FileStreamReader(const std::filesystem::path& path);
-			virtual ~FileStreamReader();
+			BinaryStreamReader(const std::filesystem::path& path);
+			virtual ~BinaryStreamReader();
 			void Close();
 
 			bool IsStreamGood() const;

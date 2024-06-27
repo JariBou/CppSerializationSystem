@@ -130,15 +130,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Deserializer.cpp" />
-    <ClCompile Include="FileStreamReader.cpp" />
-    <ClCompile Include="FileStreamWriter.cpp" />
+    <ClCompile Include="BinaryStreamReader.cpp" />
+    <ClCompile Include="BinaryStreamWriter.cpp" />
     <ClCompile Include="SerializationTests.cpp" />
     <ClCompile Include="Serializer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Deserializer.h" />
-    <ClInclude Include="FileStreamReader.h" />
-    <ClInclude Include="FileStreamWriter.h" />
+    <ClInclude Include="BinaryStreamReader.h" />
+    <ClInclude Include="BinaryStreamWriter.h" />
     <ClInclude Include="Serializer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

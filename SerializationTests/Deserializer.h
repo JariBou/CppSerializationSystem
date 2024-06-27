@@ -4,7 +4,7 @@
 namespace Serialization 
 {
 
-    class Deserializer : public FileStreamReader
+    class Deserializer : public BinaryStreamReader
     {
 		public:
 			Deserializer(const std::filesystem::path& path);
