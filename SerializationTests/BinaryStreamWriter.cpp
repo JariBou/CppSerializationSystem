@@ -1,4 +1,5 @@
 #include "BinaryStreamWriter.h"
+#include <iostream>
 
 namespace Serialization
 {
@@ -36,6 +37,16 @@ namespace Serialization
 	{
 		m_Stream.write(data, size);
 		//TODO: check if success 
+		return true;
+	}
+	bool BinaryStreamWriter::WriteString(const std::string content)
+	{
+		size_t size = content.size();
+
+		WriteData((char*)&size, sizeof(size_t));
+		std::cout << "size = " << sizeof(char) * size << std::endl;
+		WriteData((char*)content.data(), sizeof(char) * size);
+
 		return true;
 	}
 }

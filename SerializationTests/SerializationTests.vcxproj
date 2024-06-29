@@ -134,12 +134,20 @@
     <ClCompile Include="BinaryStreamWriter.cpp" />
     <ClCompile Include="SerializationTests.cpp" />
     <ClCompile Include="Serializer.cpp" />
+    <ClCompile Include="StreamReader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Deserializer.h" />
     <ClInclude Include="BinaryStreamReader.h" />
     <ClInclude Include="BinaryStreamWriter.h" />
+    <ClInclude Include="SerializableObject.h" />
+    <ClInclude Include="SerializationLibrary.h" />
     <ClInclude Include="Serializer.h" />
+    <ClInclude Include="StreamReader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BinaryStreamReader.inl" />
+    <None Include="BinaryStreamWriter.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -37,4 +37,15 @@ namespace Serialization
 		m_Stream.read(destination, size);
 		return true;
 	}
+
+	bool BinaryStreamReader::ReadString(std::string& target)
+	{
+		size_t size = 0;
+
+		ReadData((char*)&size, sizeof(size_t));
+		target.resize(size);
+		bool success = ReadData((char*)target.data(), sizeof(char) * size);
+
+		return true;
+	}
 }
